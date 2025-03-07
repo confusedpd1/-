@@ -1,0 +1,503 @@
+*{
+    padding:0;
+    margin: 0;
+    border: 0;
+}
+.alter{
+    height: 80px;
+    position: relative;
+}
+header{
+    background-color: rgb(243, 207, 159);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+}
+header ul{
+    position:absolute;
+    right: 4vw;
+    top: 0;
+    line-height: 80px;
+}
+header h1{
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    line-height: 80px;
+    left: 180px;
+    background-image: url(image/log.png);
+    background-position: center;
+    background-size: 180px;
+    background-repeat: no-repeat;
+}
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration:underline ;
+}
+header li{
+    display: inline;
+    margin-right: 2vw;
+}
+/*轮播图*/
+.round {
+    margin-top: 80px;
+    background-color: rgb(61, 39, 11);
+    background-image: url("image/图片1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* 设置父元素为 Flex 容器 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* 设置高度，方便查看效果 */
+    height: 500px;
+    margin: 0px;
+    border: 4px rgb(243, 207, 159) solid;
+}
+.round ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.box img{
+    width: 1000px;
+    height: 500px;
+}
+.box{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    border: 4px rgb(243, 207, 159) solid;
+}
+.ul1{
+    width: 100%;
+    height: 100%;
+}
+.ul1>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box-left{
+    width: 35px;
+    height: 70px;
+    color: #ccc;
+    position: absolute;
+    top: 195px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    line-height: 70px;
+    font-size: 27px;
+}
+.box-left:hover{
+    background-color: #00000050;
+    color: #fff;
+}
+.box-right{
+    width: 35px;
+    height: 70px;
+    color: #ccc;
+    position: absolute;
+    top: 195px;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 27px;
+}
+.box-right:hover{
+    background-color: #00000050;
+    color: #fff;
+}
+.ul2{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+
+}
+.ul2>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ccc;
+    float: left;
+    text-align: center;
+    line-height: 10px;
+    font-size: 7px;
+    margin-right: 10px;
+}
+.ul2>li:hover{
+    color: #fff;
+    background-color: crimson;
+}
+.ul2>li:nth-child(1){
+    color: #fff;
+    background-color: crimson;
+}
+.ul1>li:nth-child(1){
+    z-index: 100;
+}
+.indexs{
+    z-index: 1000;
+}
+/*轮播图内容完*/
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    width: 70%; /* 或者使用其他宽度设置，但注意padding-left已经为容器设置了 */
+    box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */
+    margin: 20px 0; /* 可选：为section添加一些上下边距 */
+    padding: 20px; /* 可选：为section内容添加内边距 */
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    border-radius: 8px; /* 可选：为section添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+    background-color: antiquewhite;
+    
+}
+.container h1{
+    text-align: center;
+}
+.brand h2 {
+    text-align: center;
+    color: rgb(131, 98, 16);
+    margin-bottom: 20px;
+}
+ 
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+ 
+.jieshao {
+    flex: 1;
+    padding-right: 20px;
+}
+ 
+.jieshao p {
+    text-indent: 2em;
+    margin: 0;
+    line-height: 1.6;
+}
+ 
+.brand-image {
+    max-width: 40%;
+    height: 80%;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.other{
+    display: flex;
+    flex-direction: row;
+    line-height: 1.8em;
+}
+.place1{
+    width: 35%;
+    box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */
+    margin: 20px 0; /* 可选：为section添加一些上下边距 */
+    padding: 20px; /* 可选：为section内容添加内边距 */
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    border-radius: 8px; /* 可选：为section添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+    background-color: antiquewhite;
+    margin: 3vw 7vw;
+}
+.place2{
+    width: 35%;
+    box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */
+    margin: 20px 0; /* 可选：为section添加一些上下边距 */
+    padding: 20px; /* 可选：为section内容添加内边距 */
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    border-radius: 8px; /* 可选：为section添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+    background-color: antiquewhite;
+    margin: 3vw 7vw;
+}
+.other p{
+    text-indent: 2em;
+}
+.other h2{
+    text-align: center;
+    color: rgb(131, 98, 16);
+    margin: 10px;
+}
+/*********************************************/
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    border-radius: 18px; /* 可选：为section添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+    align-items: center;
+    background-color: bisque;
+    padding: 100px 100px 80px;
+}
+.product h1{
+    margin: 15px;
+    color: rgb(144, 107, 15);
+}
+.product-img{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.pro{
+    background-color: #ffffff5f;
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 3vw;
+    margin: 2vw;
+    line-height: 1.8em;
+}
+.product-img img{
+
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+.product>p{
+    color: rgb(69, 60, 38);
+}
+/*****************************************************/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #150101;
+    color: #fff;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/***********************************************************/
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* 单个评价卡片 */
+.review-card {
+    margin: 10px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 用户信息 */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ff4d6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* 评分样式 */
+.rating {
+    color: #ff4d6d;
+    margin: 0.5rem 0;
+    display: flex;
+    gap: 2px;
+}
+
+.rating span {
+    font-size: 1.2rem;
+}
+
+/* 评价内容 */
+.review-content {
+    color: #333;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+/* 评价时间 */
+.review-time {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.review-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+.star.active {
+    color: #ff4d6d;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff334d;
+}
+
+
+/* 新增浮动按钮样式 */
+.review-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ff4d6d;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255,77,109,0.3);
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+.review-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255,77,109,0.4);
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    animation: modalSlide 0.3s ease-out;
+}
+
+@keyframes modalSlide {
+    from { transform: translate(-50%, -60%); opacity: 0; }
+    to { transform: translate(-50%, -50%); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 调整表单样式适应弹窗 */
+.review-form {
+    margin: 0;
+    box-shadow: none;
+}
+.commu{
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 20px 0; /* 可选：为section添加一些上下边距 */
+    padding: 20px; /* 可选：为section内容添加内边距 */
+    border: 1px solid #ccc; /* 可选：为section添加边框 */
+    border-radius: 8px; /* 可选：为section添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 可选：为section添加阴影 */
+}
+
+
+    
